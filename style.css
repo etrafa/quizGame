@@ -1,0 +1,83 @@
+/* IMPORTING FONT STYLE */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.menu-container {
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(195, 158, 87);
+  background: linear-gradient(
+    174deg,
+    rgba(195, 158, 87, 1) 0%,
+    rgba(84, 158, 133, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-container h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: 400%;
+  line-height: 84px;
+}
+
+.hexagon-shape {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  width: 125.28px;
+  height: 125.28px;
+  transform: rotate(-30deg) skewX(30deg) scaleY(0.866);
+  cursor: pointer;
+  margin-top: 4rem;
+}
+.hexagon-shape:before {
+  position: absolute;
+  right: 6.7%;
+  bottom: 0;
+  left: 6.7%;
+  top: 0;
+  transform: scaleY(1.155) skewX(-30deg) rotate(30deg);
+  background: linear-gradient(
+    59.82deg,
+    #0976ce 0%,
+    #0976ce 49.36%,
+    #3a91d7 50.11%,
+    #3a91d7 100%
+  );
+
+  content: "";
+}
+
+.hexagon-shape img {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  transform: rotate(45deg);
+}
+
+.button-container {
+  display: flex;
+}
+.contact-button,
+.information-button {
+  margin-top: 8rem;
+}
+
+.information-button img,
+.music-button img {
+  max-width: 45%;
+  height: auto;
+}

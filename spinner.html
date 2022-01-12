@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spin & Answer</title>
+    <link rel="stylesheet" href="spinner.css" />
+  </head>
+  <body>
+    <div class="spinner-container">
+      <h4 class="spin-wheel-text">SPIN THE WHEEL TO CHOOSE QUESTION TYPE.</h4>
+      <div id="spinner">
+        <div class="spinner-wheel"></div>
+        <div class="spinner-button"></div>
+      </div>
+    </div>
+
+    <!-- QUESTION SECTION STARTS HERE -->
+    <div class="question-container">
+      <div class="question-type">
+        <h4 class="question-type-text"></h4>
+      </div>
+      <div class="question-layout">
+        <p class="answer-checker-text">CORRECT</p>
+        <div class="user-answer-counter">
+          <p>Correct Answer: <span class="user-correct-answer">0</span></p>
+          <p>Incorrect Answer: <span class="user-wrong-answer">0</span></p>
+          <p>Question Left: <span class="question-left">10</span></p>
+        </div>
+        <p class="question-text"></p>
+      </div>
+      <div class="question-options">
+        <button class="first-option"></button>
+        <button class="second-option"></button>
+        <button class="third-option"></button>
+        <button class="fourth-option"></button>
+      </div>
+      <button class="next-question-button">NEXT</button>
+      <audio src="sound/gameOverBadResult.wav"></audio>
+      <div class="game-over-menu">
+        <button class="main-menu-button">
+          <a href="index.html">MAIN MENU</a>
+        </button>
+        <button class="restart-game-button">RESTART GAME</button>
+      </div>
+    </div>
+    <!-- QUESTION SECTION ENDS HERE -->
+    <script src="script.js"></script>
+  </body>
+</html>
